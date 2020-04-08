@@ -1,6 +1,7 @@
 package csci467.calfco.productsystem.repository;
 
 import csci467.calfco.productsystem.models.Part;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -14,6 +15,8 @@ import java.util.List;
 public class PartRepositoryImpl implements PartRepository {
 
 
+
+    @Qualifier("legacyProductDAO")
     private JdbcTemplate jdbcTemplate;
 
     public PartRepositoryImpl(JdbcTemplate jdbcTemplate) {
