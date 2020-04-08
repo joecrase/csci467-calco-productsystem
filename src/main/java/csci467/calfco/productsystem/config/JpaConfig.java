@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 public class JpaConfig {
 
     @Bean(name = "legacyProductDB")
-    @ConfigurationProperties(prefix = "spring.datasource")
+    @ConfigurationProperties(prefix = "calfco.productsystem")
     public DataSource getDataSource(){
         return DataSourceBuilder.create().build();
     }

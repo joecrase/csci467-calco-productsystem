@@ -14,8 +14,6 @@ import java.util.List;
 @Repository("partRepository")
 public class PartRepositoryImpl implements PartRepository {
 
-
-
     @Qualifier("legacyProductDAO")
     private JdbcTemplate jdbcTemplate;
 
