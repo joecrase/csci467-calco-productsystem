@@ -21,7 +21,7 @@ public class JpaConfig {
     }
 
     @Bean(name = "legacyProductDAO")
-    public JdbcTemplate jdbcTemplate1(@Qualifier("legacyProductDB") DataSource ds){
+    public JdbcTemplate legacyProductJdbc(@Qualifier("legacyProductDB") DataSource ds){
         return new JdbcTemplate(ds);
     }
 }
