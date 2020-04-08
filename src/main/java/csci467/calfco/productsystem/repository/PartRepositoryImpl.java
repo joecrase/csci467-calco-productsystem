@@ -1,7 +1,6 @@
 package csci467.calfco.productsystem.repository;
 
 import csci467.calfco.productsystem.models.Part;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -14,8 +13,12 @@ import java.util.List;
 @Repository("partRepository")
 public class PartRepositoryImpl implements PartRepository {
 
-    @Autowired
+
     private JdbcTemplate jdbcTemplate;
+
+    public PartRepositoryImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     @Override
     public Collection<Part> getAllParts() {
