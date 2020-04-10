@@ -29,8 +29,7 @@ public class CreditCardAuthResponse {
     public CreditCardAuthResponse() {
     }
 
-
-    public CreditCardAuthResponse(String vendor, String trans, String cc, String name, String exp, String brand, String authorization, String timeStamp, String _id) {
+    public CreditCardAuthResponse(String vendor, String trans, String cc, String name, String exp, String brand, String authorization, String timeStamp, String _id, Set<CreditCardAuthError> errors) {
         this.vendor = vendor;
         this.trans = trans;
         this.cc = cc;
@@ -40,6 +39,7 @@ public class CreditCardAuthResponse {
         this.authorization = authorization;
         this.timeStamp = timeStamp;
         this._id = _id;
+        this.errors = errors;
     }
 
     public String getVendor() {
@@ -112,6 +112,14 @@ public class CreditCardAuthResponse {
 
     public void set_id(String _id) {
         this._id = _id;
+    }
+
+    public Set<CreditCardAuthError> getErrors() {
+        return errors;
+    }
+
+    public void setErrors(Set<CreditCardAuthError> errors) {
+        this.errors = errors;
     }
 
     @Override
