@@ -27,10 +27,6 @@ public class CreditCardAuthController {
     @PostMapping("/auth")
     public @ResponseBody CreditCardAuthResponse authorizeTransaction(@RequestBody CreditCardAuthRequest request){
 
-
-
-
-
         return creditCardAuthService.sendRequest(request);
     }
 

@@ -1,8 +1,13 @@
 package csci467.calfco.productsystem.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class CreditCardAuthResponse {
@@ -17,6 +22,9 @@ public class CreditCardAuthResponse {
     private String authorization;
     private String timeStamp;
     private String _id;
+    @OneToMany
+    @JsonProperty("errors")
+    private Set<CreditCardAuthError> errors = new HashSet<>();
 
     public CreditCardAuthResponse() {
     }

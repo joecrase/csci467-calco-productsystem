@@ -12,9 +12,7 @@ public class CreditCardAuthRepositoryImpl implements CreditCardAuthRepository {
     @Override
     public CreditCardAuthResponse sendRequest(CreditCardAuthRequest request) {
 
-
         String url = "http://blitz.cs.niu.edu/CreditCard/";
-
 
         CreditCardAuthResponse creditCardAuthResponse = new CreditCardAuthResponse();
 
