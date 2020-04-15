@@ -12,15 +12,24 @@ import java.util.Set;
 @Entity
 public class CreditCardAuthResponse {
 
-    private String vendor;
-    private String trans;
-    private String cc;
-    private String name;
-    private String exp;
-    private String brand;
     @Id
+    @JsonProperty("authorization")
     private String authorization;
+    @JsonProperty("vendor")
+    private String vendor;
+    @JsonProperty("trans")
+    private String trans;
+    @JsonProperty("cc")
+    private String cc;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("exp")
+    private String exp;
+    @JsonProperty("brand")
+    private String brand;
+    @JsonProperty("timeStamp")
     private String timeStamp;
+    @JsonProperty("_id")
     private String _id;
     @OneToMany
     @JsonProperty("errors")

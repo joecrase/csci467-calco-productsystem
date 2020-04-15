@@ -1,6 +1,8 @@
 package csci467.calfco.productsystem.models;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -8,12 +10,19 @@ import javax.persistence.Id;
 public class Part {
 
     @Id
+    @JsonProperty("number")
     private int id;
-
+    @JsonProperty("description")
     private String description;
+    @JsonProperty("price")
     private float price;
+    @JsonProperty("weight")
     private float weight;
+    @JsonProperty("pictureURL")
     private String pictureURL;
+
+    //@OneToOne(mappedBy = "quantityOnHandId")
+    private int quantityOnHandId; // child
 
     public Part() {
     }
@@ -64,5 +73,13 @@ public class Part {
 
     public void setPictureURL(String pictureURL) {
         this.pictureURL = pictureURL;
+    }
+
+    public int getQuantityOnHandId() {
+        return quantityOnHandId;
+    }
+
+    public void setQuantityOnHandId(int quantityOnHandId) {
+        this.quantityOnHandId = quantityOnHandId;
     }
 }
