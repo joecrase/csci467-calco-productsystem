@@ -12,6 +12,7 @@ import java.util.Set;
 
 @Controller
 @RequestMapping(path = "/inventory")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class InventoryController {
 
     InventoryServiceMap inventoryServiceMap;

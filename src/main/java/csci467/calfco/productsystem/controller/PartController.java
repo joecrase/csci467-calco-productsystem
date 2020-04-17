@@ -3,6 +3,7 @@ package csci467.calfco.productsystem.controller;
 import csci467.calfco.productsystem.models.Part;
 import csci467.calfco.productsystem.service.PartServiceImpl;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping(path = "/parts")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PartController {
 
 
