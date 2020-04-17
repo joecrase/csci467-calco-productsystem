@@ -88,11 +88,25 @@ public class OrderController {
     }
 
 
-    @PostMapping ("/updateOrder/cart/{id}")
+    @PostMapping ("/updateOrder/cart/{orderId}")
     public @ResponseBody Order updateOrderCart(@RequestBody Set<OrderCartEntry> cartUpdate, @PathVariable(value = "orderId") Long orderId){
 
         Order temp = new Order();
 
         return null;
+    }
+
+    @PostMapping ("/updateStatus/{orderId}/{orderStatus}")
+    public @ResponseBody String updateOrderStatus(@PathVariable(value = "orderId") Long orderId, @PathVariable(value = "orderStatus") String orderStatus){
+
+        Order temp = new Order();
+        temp = orderServiceMap.findById(orderId);
+        if (temp == null){
+            return "Could not find order with given id";
+        }
+        temp.setOrderStatus(orderStatus);
+        orderServiceMap.save(temp);
+
+        return "Order status for order " + orderId + " set to " + orderStatus;
     }
 }
