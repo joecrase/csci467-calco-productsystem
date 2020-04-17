@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class OrderInfo {
+public class OrderCartEntry {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,7 +15,7 @@ public class OrderInfo {
     private int partId;
     private int amount;
 
-    public OrderInfo() {
+    public OrderCartEntry() {
     }
 
     public int getPartId() {

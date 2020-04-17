@@ -21,8 +21,7 @@ public class InventoryController {
         this.inventoryServiceMap = inventoryServiceMap;
     }
 
-    // TODO: Implement incrementing and decrementing inventory via two api calls (might be sent as a list)
-    // TODO: Add call to get inventory amount for a specific part
+
 
     @GetMapping(path = {"", "/", "index"})
     public List<Part> initializeQuantityOnHand(){
@@ -30,7 +29,6 @@ public class InventoryController {
         return null;
     }
 
-    // Might change QuantityOnHand model to store the entirety of the parts information
     @GetMapping(path = "/all")
     public @ResponseBody Iterable<Inventory> getAll(){
 
@@ -80,6 +78,11 @@ public class InventoryController {
             inventoryServiceMap.save(temp);
         });
 
+    }
+
+    @GetMapping(path = "/{partId}")
+    public @ResponseBody Inventory getInventoryById(@PathVariable(value = "partId") int partId){
+        return inventoryServiceMap.findByPartId(partId);
     }
 
 }

@@ -1,7 +1,7 @@
 package csci467.calfco.productsystem.controller;
 
 import csci467.calfco.productsystem.models.Order;
-import csci467.calfco.productsystem.models.OrderInfo;
+import csci467.calfco.productsystem.models.OrderCartEntry;
 import csci467.calfco.productsystem.service.map.CustomerServiceMap;
 import csci467.calfco.productsystem.service.map.OrderServiceMap;
 import org.springframework.stereotype.Controller;
@@ -14,7 +14,11 @@ import java.util.Set;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class OrderController {
 
-    // TODO : Make sure respect the ManyToOne and ManyToMany relationships
+    // TODO : implement getting an order by id
+    // TODO : implement getting a set of orders by shipped
+    // TODO : implement setting the shipped property (for Filling Orders)
+    // TODO : implement returning invoice information
+
 
     OrderServiceMap orderServiceMap;
     CustomerServiceMap customerServiceMap;
@@ -91,7 +95,7 @@ public class OrderController {
 
 
     @PostMapping ("/updateOrder/cart/{id}")
-    public @ResponseBody Order updateOrderCart(@RequestBody Set<OrderInfo> cartUpdate, @PathVariable(value = "orderId") Long orderId){
+    public @ResponseBody Order updateOrderCart(@RequestBody Set<OrderCartEntry> cartUpdate, @PathVariable(value = "orderId") Long orderId){
 
         Order temp = new Order();
 

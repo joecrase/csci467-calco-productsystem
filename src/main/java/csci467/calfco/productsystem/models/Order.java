@@ -28,7 +28,7 @@ public class Order extends BaseEntity {
     private boolean isShipped;
 
     @OneToMany
-    private Set<OrderInfo> cart = new HashSet<>();
+    private Set<OrderCartEntry> cart = new HashSet<>();
 
     @ManyToOne
     private Customer customer;
@@ -84,11 +84,11 @@ public class Order extends BaseEntity {
         isShipped = shipped;
     }
 
-    public Set<OrderInfo> getCart() {
+    public Set<OrderCartEntry> getCart() {
         return cart;
     }
 
-    public void setCart(Set<OrderInfo> cart) {
+    public void setCart(Set<OrderCartEntry> cart) {
         this.cart = cart;
     }
 
