@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Inventory extends BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long Id;
 
     private int inventory;
