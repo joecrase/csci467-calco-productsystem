@@ -26,6 +26,8 @@ public class Order extends BaseEntity {
     private float priceTotal;
     @JsonProperty("orderStatus")
     private String orderStatus; // authorized, filling, shipped
+    @JsonProperty("datePurchased")
+    private String datePurchased;
 
     @OneToMany
     private Set<OrderCartEntry> cart = new HashSet<>();
@@ -34,6 +36,14 @@ public class Order extends BaseEntity {
     private Customer customer;
 
     public Order() {
+    }
+
+    public String getDatePurchased() {
+        return datePurchased;
+    }
+
+    public void setDatePurchased(String datePurchased) {
+        this.datePurchased = datePurchased;
     }
 
     public String getAuthorizationNumber() {

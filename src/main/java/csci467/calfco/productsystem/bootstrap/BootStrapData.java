@@ -70,6 +70,7 @@ public class BootStrapData implements CommandLineRunner {
         tempOrder.setWeight(100);
         tempOrder.setPriceTotal(12.31f);
         tempOrder.setOrderStatus("authorized");
+        tempOrder.setDatePurchased("4/17/2020");
         tempOrder.setCustomer(temp);
         orderServiceMap.save(tempOrder);
 
