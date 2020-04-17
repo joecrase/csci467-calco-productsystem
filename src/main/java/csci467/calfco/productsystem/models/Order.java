@@ -10,6 +10,8 @@ import java.util.Set;
 @Entity
 public class Order extends BaseEntity {
 
+    // TODO: Change order status to a String value
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
@@ -22,10 +24,8 @@ public class Order extends BaseEntity {
     private int weight;
     @JsonProperty("priceTotal")
     private float priceTotal;
-    @JsonProperty("isAuthorized")
-    private boolean isAuthorized;
-    @JsonProperty("isShipped")
-    private boolean isShipped;
+    @JsonProperty("orderStatus")
+    private String orderStatus; // authorized, filling, shipped
 
     @OneToMany
     private Set<OrderCartEntry> cart = new HashSet<>();
@@ -68,20 +68,12 @@ public class Order extends BaseEntity {
         this.priceTotal = priceTotal;
     }
 
-    public boolean isAuthorized() {
-        return isAuthorized;
+    public String getOrderStatus() {
+        return orderStatus;
     }
 
-    public void setAuthorized(boolean authorized) {
-        isAuthorized = authorized;
-    }
-
-    public boolean isShipped() {
-        return isShipped;
-    }
-
-    public void setShipped(boolean shipped) {
-        isShipped = shipped;
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public Set<OrderCartEntry> getCart() {

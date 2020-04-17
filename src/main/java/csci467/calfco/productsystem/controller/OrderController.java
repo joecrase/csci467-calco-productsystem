@@ -47,14 +47,11 @@ public class OrderController {
             },
             ...
         ]
-        "authorized": false,
-        "shipped": false,
         "authorizationNumber": "abc",
         "trackingNumber": "abc",
         "weight": 123,
         "priceTotal": 1.0,
-        "isAuthorized": false,
-        "isShipped": false
+        "orderStatus" "abc"
     }
      */
     /* Response Body
@@ -74,14 +71,11 @@ public class OrderController {
             "password": "abc",
             "address": "abc"
         },
-        "authorized": false,
-        "shipped": false,
         "authorizationNumber": "abc",
         "trackingNumber": "abc",
         "weight": 123,
         "priceTotal": 1.0,
-        "isAuthorized": false,
-        "isShipped": false
+        "orderStatus": "abc"
     }
      */
     @PostMapping ("/{customerId}")
