@@ -24,7 +24,7 @@ public class Part {
     private String pictureURL;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private QuantityOnHand quantityOnHand;
+    private Inventory inventory;
 
     public Part() {
     }

@@ -1,8 +1,8 @@
 package csci467.calfco.productsystem.bootstrap;
 
-import csci467.calfco.productsystem.models.QuantityOnHand;
+import csci467.calfco.productsystem.models.Inventory;
 import csci467.calfco.productsystem.service.PartService;
-import csci467.calfco.productsystem.service.map.QuantityOnHandServiceMap;
+import csci467.calfco.productsystem.service.map.InventoryServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -10,10 +10,10 @@ import java.util.Random;
 
 @Component
 public class BootStrapData implements CommandLineRunner {
-    QuantityOnHandServiceMap quantityOnHandMapService;
+    InventoryServiceMap quantityOnHandMapService;
     PartService partService;
 
-    public BootStrapData(QuantityOnHandServiceMap quantityOnHandMapService, PartService partService) {
+    public BootStrapData(InventoryServiceMap quantityOnHandMapService, PartService partService) {
         this.quantityOnHandMapService = quantityOnHandMapService;
         this.partService = partService;
     }
@@ -32,10 +32,10 @@ public class BootStrapData implements CommandLineRunner {
         Random random = new Random();
 
         partService.getAllParts().forEach(entry ->{
-            QuantityOnHand quantityOnHand = new QuantityOnHand();
-            quantityOnHand.setPart(entry);
-            quantityOnHand.setInventory(random.nextInt(100));
-            quantityOnHandMapService.save(quantityOnHand);
+            Inventory inventory = new Inventory();
+            inventory.setPart(entry);
+            inventory.setInventory(random.nextInt(100));
+            quantityOnHandMapService.save(inventory);
         });
     }
 }

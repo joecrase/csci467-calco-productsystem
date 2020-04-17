@@ -6,8 +6,8 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "quantity_on_hand")
-public class QuantityOnHand extends BaseEntity {
+@Table(name = "inventory")
+public class Inventory extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,7 +18,7 @@ public class QuantityOnHand extends BaseEntity {
     @OneToOne
     private Part part;
 
-    public QuantityOnHand() {
+    public Inventory() {
     }
 
     public Part getPart() {
