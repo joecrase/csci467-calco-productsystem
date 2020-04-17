@@ -1,17 +1,9 @@
 package csci467.calfco.productsystem.service;
 
-import csci467.calfco.productsystem.repository.QuantityOnHandRepository;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
+import csci467.calfco.productsystem.models.QuantityOnHand;
 
-@Service
-public class QuantityOnHandService {
 
-    @Qualifier("quantityOnHandRepository")
-    private QuantityOnHandRepository quantityOnHandRepository;
 
-    public QuantityOnHandService(QuantityOnHandRepository quantityOnHandRepository) {
-        this.quantityOnHandRepository = quantityOnHandRepository;
-    }
+public interface QuantityOnHandService extends CrudService<QuantityOnHand, Long>{
 
 }

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Collection;
 import java.util.List;
 
 @Repository("partRepository")
@@ -22,7 +21,7 @@ public class PartRepositoryImpl implements PartRepository {
     }
 
     @Override
-    public Collection<Part> getAllParts() {
+    public List<Part> getAllParts() {
 
         final String sql = "SELECT * FROM parts";
         List<Part> parts = jdbcTemplate.query(sql, new RowMapper<Part>() {

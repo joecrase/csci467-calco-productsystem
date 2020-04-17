@@ -2,7 +2,7 @@ package csci467.calfco.productsystem.controller;
 
 import csci467.calfco.productsystem.models.CreditCardAuthRequest;
 import csci467.calfco.productsystem.models.CreditCardAuthResponse;
-import csci467.calfco.productsystem.service.CreditCardAuthService;
+import csci467.calfco.productsystem.service.CreditCardAuthServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/creditcard")
 public class CreditCardAuthController {
 
-    CreditCardAuthService creditCardAuthService;
+    CreditCardAuthServiceImpl creditCardAuthService;
 
-    public CreditCardAuthController(CreditCardAuthService creditCardAuthService) {
+    public CreditCardAuthController(CreditCardAuthServiceImpl creditCardAuthService) {
         this.creditCardAuthService = creditCardAuthService;
     }
 

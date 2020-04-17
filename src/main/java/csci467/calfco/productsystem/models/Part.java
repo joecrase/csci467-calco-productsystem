@@ -21,8 +21,7 @@ public class Part {
     @JsonProperty("pictureURL")
     private String pictureURL;
 
-    //@OneToOne(mappedBy = "quantityOnHandId")
-    private int quantityOnHandId; // child
+
 
     public Part() {
     }
@@ -75,11 +74,4 @@ public class Part {
         this.pictureURL = pictureURL;
     }
 
-    public int getQuantityOnHandId() {
-        return quantityOnHandId;
-    }
-
-    public void setQuantityOnHandId(int quantityOnHandId) {
-        this.quantityOnHandId = quantityOnHandId;
-    }
 }

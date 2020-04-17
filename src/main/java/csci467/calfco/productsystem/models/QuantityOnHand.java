@@ -1,36 +1,22 @@
 package csci467.calfco.productsystem.models;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Data
 @Entity
-public class QuantityOnHand {
+@Table(name = "quantity_on_hand")
+public class QuantityOnHand extends BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-
-
-    //@OneToOne(cascade = CascadeType.ALL)
-    //@JoinColumn(name = "quanityOnHandId")
-    @JsonProperty("part")  // parent
     private int partId;
-    @JsonProperty("inventory")
+
     private int inventory;
 
     public QuantityOnHand() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getPartId() {

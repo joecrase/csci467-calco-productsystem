@@ -1,7 +1,11 @@
 package csci467.calfco.productsystem.repository.custom;
 
-import org.springframework.stereotype.Repository;
+import csci467.calfco.productsystem.models.Part;
+import csci467.calfco.productsystem.models.QuantityOnHand;
 
-@Repository
+import java.util.List;
+
+
 public interface CustomQuantityOnHandRepository {
+    List<QuantityOnHand> initializeQuantityOnHand(List<Part> parts);
 }
