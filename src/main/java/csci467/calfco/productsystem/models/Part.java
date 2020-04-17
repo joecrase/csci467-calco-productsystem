@@ -3,8 +3,10 @@ package csci467.calfco.productsystem.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Part {
@@ -21,7 +23,8 @@ public class Part {
     @JsonProperty("pictureURL")
     private String pictureURL;
 
-
+    @OneToOne(cascade = CascadeType.ALL)
+    private QuantityOnHand quantityOnHand;
 
     public Part() {
     }

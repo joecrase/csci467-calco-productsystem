@@ -2,9 +2,7 @@ package csci467.calfco.productsystem.models;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -12,19 +10,23 @@ import javax.persistence.Table;
 public class QuantityOnHand extends BaseEntity {
 
     @Id
-    private int partId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long Id;
 
     private int inventory;
+
+    @OneToOne
+    private Part part;
 
     public QuantityOnHand() {
     }
 
-    public int getPartId() {
-        return partId;
+    public Part getPart() {
+        return part;
     }
 
-    public void setPartId(int partId) {
-        this.partId = partId;
+    public void setPart(Part part) {
+        this.part = part;
     }
 
     public int getInventory() {

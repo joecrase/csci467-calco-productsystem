@@ -33,7 +33,7 @@ public class BootStrapData implements CommandLineRunner {
 
         partService.getAllParts().forEach(entry ->{
             QuantityOnHand quantityOnHand = new QuantityOnHand();
-            quantityOnHand.setPartId(entry.getId());
+            quantityOnHand.setPart(entry);
             quantityOnHand.setInventory(random.nextInt(100));
             quantityOnHandMapService.save(quantityOnHand);
         });
