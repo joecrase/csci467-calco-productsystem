@@ -109,4 +109,14 @@ public class OrderController {
 
         return "Order status for order " + orderId + " set to " + orderStatus;
     }
+
+    @GetMapping("/{orderId}")
+    public @ResponseBody Order getOrderById(@PathVariable(value = "orderId") Long orderId){
+        Order temp = new Order();
+        temp = orderServiceMap.findById(orderId);
+        if (temp == null){
+            return null;
+        }
+        return temp;
+    }
 }

@@ -3,6 +3,7 @@ package csci467.calfco.productsystem.bootstrap;
 import csci467.calfco.productsystem.models.Customer;
 import csci467.calfco.productsystem.models.Inventory;
 import csci467.calfco.productsystem.models.Order;
+import csci467.calfco.productsystem.models.OrderCartEntry;
 import csci467.calfco.productsystem.service.PartService;
 import csci467.calfco.productsystem.service.map.CustomerServiceMap;
 import csci467.calfco.productsystem.service.map.InventoryServiceMap;
@@ -72,6 +73,14 @@ public class BootStrapData implements CommandLineRunner {
         tempOrder.setOrderStatus("authorized");
         tempOrder.setDatePurchased("4/17/2020");
         tempOrder.setCustomer(temp);
+        OrderCartEntry tempCartEntry = new OrderCartEntry();
+        tempCartEntry.setPartId(1);
+        tempCartEntry.setAmount(10);
+        tempOrder.getCart().add(tempCartEntry);
+        OrderCartEntry tempCartEntry2 = new OrderCartEntry();
+        tempCartEntry2.setPartId(2);
+        tempCartEntry2.setAmount(12);
+        tempOrder.getCart().add(tempCartEntry2);
         orderServiceMap.save(tempOrder);
 
     }
