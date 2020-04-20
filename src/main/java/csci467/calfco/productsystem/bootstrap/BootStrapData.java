@@ -65,6 +65,10 @@ public class BootStrapData implements CommandLineRunner {
 
         customerServiceMap.save(temp2);
 
+        customerServiceMap.findAll().forEach(consumer -> {
+            System.out.println(consumer.toString());
+        });
+
         Order tempOrder = new Order();
         tempOrder.setAuthorizationNumber("XXXXXXXX");
         tempOrder.setTrackingNumber("YYYYYYY");
@@ -82,6 +86,8 @@ public class BootStrapData implements CommandLineRunner {
         tempCartEntry2.setAmount(12);
         tempOrder.getCart().add(tempCartEntry2);
         orderServiceMap.save(tempOrder);
+
+
 
     }
 }

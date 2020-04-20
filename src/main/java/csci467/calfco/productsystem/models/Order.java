@@ -38,6 +38,16 @@ public class Order extends BaseEntity {
     public Order() {
     }
 
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getDatePurchased() {
         return datePurchased;
     }
@@ -115,5 +125,20 @@ public class Order extends BaseEntity {
     @Override
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", authorizationNumber='" + authorizationNumber + '\'' +
+                ", trackingNumber='" + trackingNumber + '\'' +
+                ", weight=" + weight +
+                ", priceTotal=" + priceTotal +
+                ", orderStatus='" + orderStatus + '\'' +
+                ", datePurchased='" + datePurchased + '\'' +
+                ", cart=" + cart +
+                ", customer=" + customer +
+                '}';
     }
 }

@@ -38,6 +38,16 @@ public class OrderController {
         return orderServiceMap.findAll();
     }
 
+    @GetMapping("/{orderId}")
+    public @ResponseBody Order getOrderById(@PathVariable(value = "orderId") Long orderId){
+        Order temp = new Order();
+        temp = orderServiceMap.findById(orderId);
+        if (temp == null){
+            return null;
+        }
+        return temp;
+    }
+
     /* Request Body
     {
         "cart": [
@@ -51,7 +61,8 @@ public class OrderController {
         "trackingNumber": "abc",
         "weight": 123,
         "priceTotal": 1.0,
-        "orderStatus" "abc"
+        "orderStatus" "abc",
+        "datePurchased": "1/23/4567"
     }
      */
     /* Response Body
@@ -75,7 +86,8 @@ public class OrderController {
         "trackingNumber": "abc",
         "weight": 123,
         "priceTotal": 1.0,
-        "orderStatus": "abc"
+        "orderStatus": "abc",
+        "datePurchased": "1/23/4567"
     }
      */
     @PostMapping ("/{customerId}")
@@ -87,7 +99,7 @@ public class OrderController {
 
     }
 
-
+    // most likely won't be used
     @PostMapping ("/updateOrder/cart/{orderId}")
     public @ResponseBody Order updateOrderCart(@RequestBody Set<OrderCartEntry> cartUpdate, @PathVariable(value = "orderId") Long orderId){
 
@@ -110,13 +122,5 @@ public class OrderController {
         return "Order status for order " + orderId + " set to " + orderStatus;
     }
 
-    @GetMapping("/{orderId}")
-    public @ResponseBody Order getOrderById(@PathVariable(value = "orderId") Long orderId){
-        Order temp = new Order();
-        temp = orderServiceMap.findById(orderId);
-        if (temp == null){
-            return null;
-        }
-        return temp;
-    }
+
 }
