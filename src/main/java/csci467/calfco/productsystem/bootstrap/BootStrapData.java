@@ -13,15 +13,15 @@ import java.util.Random;
 
 @Component
 public class BootStrapData implements CommandLineRunner {
-    InventoryServiceMap quantityOnHandMapService;
+    InventoryServiceMap inventoryServiceMap;
     PartService partService;
     CustomerServiceMap customerServiceMap;
     OrderServiceMap orderServiceMap;
     ShippingCostServiceMap shippingCostServiceMap;
 
-    public BootStrapData(InventoryServiceMap quantityOnHandMapService, PartService partService, CustomerServiceMap customerServiceMap,
+    public BootStrapData(InventoryServiceMap inventoryServiceMap, PartService partService, CustomerServiceMap customerServiceMap,
                          OrderServiceMap orderServiceMap, ShippingCostServiceMap shippingCostServiceMap) {
-        this.quantityOnHandMapService = quantityOnHandMapService;
+        this.inventoryServiceMap = inventoryServiceMap;
         this.partService = partService;
         this.customerServiceMap = customerServiceMap;
         this.orderServiceMap = orderServiceMap;
@@ -31,7 +31,7 @@ public class BootStrapData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        if(quantityOnHandMapService.findAll().size() == 0) {
+        if(inventoryServiceMap.findAll().size() == 0) {
             initializeData();
         }
 
@@ -45,7 +45,7 @@ public class BootStrapData implements CommandLineRunner {
             Inventory inventory = new Inventory();
             inventory.setPart(entry);
             inventory.setInventory(random.nextInt(100));
-            quantityOnHandMapService.save(inventory);
+            inventoryServiceMap.save(inventory);
         });
 
         Customer temp = new Customer();
@@ -94,12 +94,6 @@ public class BootStrapData implements CommandLineRunner {
             tempShippingCost.setPrice((i / 5) * 3);
             shippingCostServiceMap.save(tempShippingCost);
         }
-
-
-
-        shippingCostServiceMap.findAll().forEach(shippingCost -> {
-            System.out.println(shippingCost.toString());
-        });
 
     }
 }
