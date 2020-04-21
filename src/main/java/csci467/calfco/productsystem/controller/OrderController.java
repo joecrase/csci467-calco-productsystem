@@ -48,7 +48,8 @@ public class OrderController {
         return temp;
     }
 
-    /* Request Body
+    // Request Body
+    /*
     {
         "cart": [
             {
@@ -65,7 +66,8 @@ public class OrderController {
         "datePurchased": "1/23/4567"
     }
      */
-    /* Response Body
+    // Response Body
+    /*
          {
         "cart": [
             {
@@ -90,7 +92,7 @@ public class OrderController {
         "datePurchased": "1/23/4567"
     }
      */
-    @PostMapping ("/{customerId}")
+    @PostMapping ("/{customerId}") // Id of the customer whom placed the order
     public @ResponseBody Order createOrder(@RequestBody Order order, @PathVariable(value = "customerId") Long customerId){
 
         order.setCustomer(customerServiceMap.findById(customerId));
@@ -99,11 +101,9 @@ public class OrderController {
 
     }
 
-    // most likely won't be used
+    // TO BE REMOVED
     @PostMapping ("/updateOrder/cart/{orderId}")
     public @ResponseBody Order updateOrderCart(@RequestBody Set<OrderCartEntry> cartUpdate, @PathVariable(value = "orderId") Long orderId){
-
-        Order temp = new Order();
 
         return null;
     }

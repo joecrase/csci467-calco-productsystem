@@ -1,13 +1,11 @@
 package csci467.calfco.productsystem.bootstrap;
 
-import csci467.calfco.productsystem.models.Customer;
-import csci467.calfco.productsystem.models.Inventory;
-import csci467.calfco.productsystem.models.Order;
-import csci467.calfco.productsystem.models.OrderCartEntry;
+import csci467.calfco.productsystem.models.*;
 import csci467.calfco.productsystem.service.PartService;
 import csci467.calfco.productsystem.service.map.CustomerServiceMap;
 import csci467.calfco.productsystem.service.map.InventoryServiceMap;
 import csci467.calfco.productsystem.service.map.OrderServiceMap;
+import csci467.calfco.productsystem.service.map.ShippingCostServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -19,12 +17,15 @@ public class BootStrapData implements CommandLineRunner {
     PartService partService;
     CustomerServiceMap customerServiceMap;
     OrderServiceMap orderServiceMap;
+    ShippingCostServiceMap shippingCostServiceMap;
 
-    public BootStrapData(InventoryServiceMap quantityOnHandMapService, PartService partService, CustomerServiceMap customerServiceMap, OrderServiceMap orderServiceMap) {
+    public BootStrapData(InventoryServiceMap quantityOnHandMapService, PartService partService, CustomerServiceMap customerServiceMap,
+                         OrderServiceMap orderServiceMap, ShippingCostServiceMap shippingCostServiceMap) {
         this.quantityOnHandMapService = quantityOnHandMapService;
         this.partService = partService;
         this.customerServiceMap = customerServiceMap;
         this.orderServiceMap = orderServiceMap;
+        this.shippingCostServiceMap = shippingCostServiceMap;
     }
 
     @Override
@@ -65,9 +66,7 @@ public class BootStrapData implements CommandLineRunner {
 
         customerServiceMap.save(temp2);
 
-        customerServiceMap.findAll().forEach(consumer -> {
-            System.out.println(consumer.toString());
-        });
+
 
         Order tempOrder = new Order();
         tempOrder.setAuthorizationNumber("XXXXXXXX");
@@ -88,6 +87,19 @@ public class BootStrapData implements CommandLineRunner {
         orderServiceMap.save(tempOrder);
 
 
+        /* Setting Shipping Costs */
+        for(int i = 0; i <= 100; i = i + 5){
+            ShippingCost tempShippingCost = new ShippingCost();
+            tempShippingCost.setMaxWeight(i);
+            tempShippingCost.setPrice((i / 5) * 3);
+            shippingCostServiceMap.save(tempShippingCost);
+        }
+
+
+
+        shippingCostServiceMap.findAll().forEach(shippingCost -> {
+            System.out.println(shippingCost.toString());
+        });
 
     }
 }

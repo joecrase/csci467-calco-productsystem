@@ -89,6 +89,7 @@ public class Customer extends BaseEntity {
     @Override
     public String toString() {
         return "Customer{" +
+                "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
