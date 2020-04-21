@@ -56,7 +56,7 @@ public class InventoryController {
             inventoryServiceMap.save(temp);
         });
 
-        return inventoryServiceMap.findAll();
+        return new TreeSet<Inventory>(inventoryServiceMap.findAll());
 
     }
 
@@ -82,7 +82,7 @@ public class InventoryController {
         });
 
 
-        return inventoryServiceMap.findAll();
+        return new TreeSet<Inventory>(inventoryServiceMap.findAll());
     }
 
     @GetMapping(path = "/{partId}")
