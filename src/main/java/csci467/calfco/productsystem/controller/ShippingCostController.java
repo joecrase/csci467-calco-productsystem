@@ -25,21 +25,29 @@ public class ShippingCostController {
        return new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
     }
 
-    // Modifies existing weight bracket to a different weight/price
+    // Modifies the weight bracket to a different weight/price
+    // Can give a specific id -> modifies that entry
+    // Can give no id -> creates new entry and inserts
     @PostMapping
     @RequestMapping("/modify")
-    public @ResponseBody
-    Set<ShippingCost> modifyShippingCost(@RequestBody Set<ShippingCost> toModify){
+    public @ResponseBody Set<ShippingCost> modifyShippingCost(@RequestBody Set<ShippingCost> toModify){
 
         toModify.forEach(shippingCost -> {
-            if (shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()).getId() == null || shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()).getId() == shippingCost.getId() ){
+            if (shippingCost.getId() != null && shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()).getId() == shippingCost.getId()){
+                // id was provided, and it is an object in the database with the same id
                 ShippingCost newShippingCost = shippingCostServiceMap.findById(shippingCost.getId());
                 newShippingCost.setPrice(shippingCost.getPrice());
                 newShippingCost.setMaxWeight(shippingCost.getMaxWeight());
                 shippingCostServiceMap.save(newShippingCost);
-            } else {
-                shippingCostServiceMap.delete(shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()));
+            } else if (shippingCostServiceMap.findById(shippingCost.getId()) != null) { // if an id was provided, and is in the database
                 ShippingCost newShippingCost = shippingCostServiceMap.findById(shippingCost.getId());
+                shippingCostServiceMap.delete(shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()));
+                newShippingCost.setPrice(shippingCost.getPrice());
+                newShippingCost.setMaxWeight(shippingCost.getMaxWeight());
+                shippingCostServiceMap.save(newShippingCost);
+            } else { // id is null, create new entry in database
+                ShippingCost newShippingCost = new ShippingCost();
+                shippingCostServiceMap.delete(shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()));
                 newShippingCost.setPrice(shippingCost.getPrice());
                 newShippingCost.setMaxWeight(shippingCost.getMaxWeight());
                 shippingCostServiceMap.save(newShippingCost);
@@ -48,9 +56,5 @@ public class ShippingCostController {
 
         return  new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
     }
-
-
-
-
 
 }
