@@ -47,13 +47,15 @@ public class InventoryController {
      */
     // Need to add some sort of response for these two to indicate success
     @PostMapping(path = "/increment")
-    public @ResponseBody void addToInventory(@RequestBody Set<InventoryChangeRequest> toChange) {
+    public @ResponseBody Set<Inventory> addToInventory(@RequestBody Set<InventoryChangeRequest> toChange) {
 
         toChange.forEach(entry -> {
             Inventory temp = inventoryServiceMap.findByPartId(entry.getPartId());
             temp.setInventory(temp.getInventory() + entry.getToChangeAmount());
             inventoryServiceMap.save(temp);
         });
+
+        return inventoryServiceMap.findAll();
 
     }
 
@@ -70,7 +72,7 @@ public class InventoryController {
      */
     // Need to add some sort of response for these two to indicate succes
     @PostMapping(path = "/decrement")
-    public @ResponseBody void subtractFromInventory(@RequestBody Set<InventoryChangeRequest> toChange){
+    public @ResponseBody Set<Inventory> subtractFromInventory(@RequestBody Set<InventoryChangeRequest> toChange){
 
         toChange.forEach(entry -> {
             Inventory temp = inventoryServiceMap.findByPartId(entry.getPartId());
@@ -78,6 +80,8 @@ public class InventoryController {
             inventoryServiceMap.save(temp);
         });
 
+
+        return inventoryServiceMap.findAll();
     }
 
     @GetMapping(path = "/{partId}")
