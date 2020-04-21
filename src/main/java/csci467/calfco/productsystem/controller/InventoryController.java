@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 @Controller
 @RequestMapping(path = "/inventory")
@@ -32,7 +33,7 @@ public class InventoryController {
     @GetMapping(path = "/all")
     public @ResponseBody Iterable<Inventory> getAll(){
 
-        return inventoryServiceMap.findAll();
+        return new TreeSet<Inventory>(inventoryServiceMap.findAll());
     }
 
     // Accepts array of json objects:

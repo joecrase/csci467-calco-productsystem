@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "inventory")
-public class Inventory extends BaseEntity {
+public class Inventory extends BaseEntity implements Comparable<Inventory> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -35,5 +35,19 @@ public class Inventory extends BaseEntity {
 
     public void setInventory(int inventory) {
         this.inventory = inventory;
+    }
+
+    @Override
+    public int compareTo(Inventory inventory) {
+
+        int result = 0;
+
+        if (this.getPart().getId() < inventory.getPart().getId()){
+            result = -1;
+        } else if (this.getPart().getId() > inventory.getPart().getId()){
+            result = 1;
+        }
+
+        return result;
     }
 }
