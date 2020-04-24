@@ -22,6 +22,33 @@ public class CreditCardAuthController {
         return "You have hit the creditcard controller";
     }
 
+
+    // Request Body
+    /*
+    {
+	"vendor": "VE001-99",
+	"trans": "907-987654321-296", ** NEEDS TO BE IN THIS FORMAT, AND UNIQUE
+	"cc": "6011 1234 4321 1234", *** THIS HAS TO BE THIS EXACT CC NUMBER
+	"name": "John Doe",
+	"exp": "12/2020",
+	"amount": 654.32
+     */
+    // Response Body
+    /*
+    {
+    "authorization": "16167",           ** null is failed
+    "vendor": "VE001-99",
+    "trans": "907-987654322-296",
+    "cc": "6011 1234 4321 1234",
+    "name": "John Doe",
+    "exp": "12/2020",
+    "brand": "discover",
+    "timeStamp": "1587751245003",       ** null is failed
+    "_id": "5ea3294d41d82e11ff6b16ad",  ** null is failed
+    "errors": []                        **** Will have an "error": "abc" if failed
+    }
+     */
+
     @PostMapping("/auth")
     public @ResponseBody CreditCardAuthResponse authorizeTransaction(@RequestBody CreditCardAuthRequest request){
 
