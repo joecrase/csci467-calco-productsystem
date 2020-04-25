@@ -27,7 +27,7 @@ public class Order extends BaseEntity {
     @JsonProperty("orderStatus")
     private String orderStatus; // authorized, filling, shipped
     @JsonProperty("datePurchased")
-    private String datePurchased;
+    private String datePurchased; // REQUIRED FORMAT YYYY/MM/DD
 
     @OneToMany
     private Set<OrderCartEntry> cart = new HashSet<>();

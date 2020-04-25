@@ -77,11 +77,11 @@ public class BootStrapData implements CommandLineRunner {
         tempOrder.setDatePurchased("4/17/2020");
         tempOrder.setCustomer(temp);
         OrderCartEntry tempCartEntry = new OrderCartEntry();
-        tempCartEntry.setPartId(1);
+        tempCartEntry.setPart(partService.getPartById(1));
         tempCartEntry.setAmount(10);
         tempOrder.getCart().add(tempCartEntry);
         OrderCartEntry tempCartEntry2 = new OrderCartEntry();
-        tempCartEntry2.setPartId(2);
+        tempCartEntry2.setPart(partService.getPartById(2));
         tempCartEntry2.setAmount(12);
         tempOrder.getCart().add(tempCartEntry2);
         orderServiceMap.save(tempOrder);

@@ -1,9 +1,6 @@
 package csci467.calfco.productsystem.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class OrderCartEntry {
@@ -12,18 +9,24 @@ public class OrderCartEntry {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private int partId;
+    @OneToOne
+    private Part part;
     private int amount;
 
     public OrderCartEntry() {
     }
 
-    public int getPartId() {
-        return partId;
+    public OrderCartEntry(Part part, int amount) {
+        this.part = part;
+        this.amount = amount;
     }
 
-    public void setPartId(int partId) {
-        this.partId = partId;
+    public Part getPart() {
+        return part;
+    }
+
+    public void setPart(Part part) {
+        this.part = part;
     }
 
     public int getAmount() {

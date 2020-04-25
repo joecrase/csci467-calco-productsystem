@@ -2,6 +2,7 @@ package csci467.calfco.productsystem.repository;
 
 import csci467.calfco.productsystem.models.Part;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -38,5 +39,17 @@ public class PartRepositoryImpl implements PartRepository {
         });
 
         return parts;
+    }
+
+    @Override
+    public Part getPartById(int partId) {
+
+        final String sql = "SELECT * FROM parts WHERE number = ?";
+
+        return (Part) jdbcTemplate.queryForObject(
+                sql,
+                new Object[]{partId},
+                new BeanPropertyRowMapper<>(Part.class));
+
     }
 }

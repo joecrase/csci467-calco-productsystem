@@ -2,6 +2,8 @@ package csci467.calfco.productsystem.controller;
 
 import csci467.calfco.productsystem.models.Order;
 import csci467.calfco.productsystem.models.OrderCartEntry;
+import csci467.calfco.productsystem.models.OrderRequest;
+import csci467.calfco.productsystem.service.PartService;
 import csci467.calfco.productsystem.service.map.CustomerServiceMap;
 import csci467.calfco.productsystem.service.map.OrderServiceMap;
 import org.springframework.stereotype.Controller;
@@ -22,10 +24,12 @@ public class OrderController {
 
     OrderServiceMap orderServiceMap;
     CustomerServiceMap customerServiceMap;
+    PartService partService;
 
-    public OrderController(OrderServiceMap orderServiceMap, CustomerServiceMap customerServiceMap) {
+    public OrderController(OrderServiceMap orderServiceMap, CustomerServiceMap customerServiceMap, PartService partService) {
         this.orderServiceMap = orderServiceMap;
         this.customerServiceMap = customerServiceMap;
+        this.partService = partService;
     }
 
     @GetMapping({"", "/", "index"})
@@ -40,12 +44,7 @@ public class OrderController {
 
     @GetMapping("/{orderId}")
     public @ResponseBody Order getOrderById(@PathVariable(value = "orderId") Long orderId){
-        Order temp = new Order();
-        temp = orderServiceMap.findById(orderId);
-        if (temp == null){
-            return null;
-        }
-        return temp;
+        return orderServiceMap.findById(orderId);
     }
 
     // Request Body
@@ -59,7 +58,6 @@ public class OrderController {
             ...
         ]
         "authorizationNumber": "abc",
-        "trackingNumber": "abc",
         "weight": 123,
         "priceTotal": 1.0,
         "orderStatus" "abc",
@@ -71,7 +69,13 @@ public class OrderController {
          {
         "cart": [
             {
-                "partId": 123,
+                "part": {
+                    "number": 123,
+                    "description": "abc",
+                    "price": 123.123,
+                    "weight": 123.123,
+                    "pictureURL": "abc"
+                },
                 "amount": 123
             },
             ...
@@ -85,7 +89,7 @@ public class OrderController {
             "address": "abc"
         },
         "authorizationNumber": "abc",
-        "trackingNumber": "abc",
+         "trackingNumber": "abc",
         "weight": 123,
         "priceTotal": 1.0,
         "orderStatus": "abc",
@@ -93,29 +97,29 @@ public class OrderController {
     }
      */
     @PostMapping ("/{customerId}") // Id of the customer whom placed the order
-    public @ResponseBody Order createOrder(@RequestBody Order order, @PathVariable(value = "customerId") Long customerId){
+    public @ResponseBody Order createOrder(@RequestBody OrderRequest orderRequest, @PathVariable(value = "customerId") Long customerId){
 
+        Order order = new Order();
+        order.setAuthorizationNumber(orderRequest.getAuthorizationNumber());
+        order.setTrackingNumber("");
+        order.setWeight(orderRequest.getWeight());
+        order.setPriceTotal(orderRequest.getPriceTotal());
+        order.setOrderStatus(orderRequest.getOrderStatus());
+        order.setDatePurchased(orderRequest.getDatePurchased());
+        // add cart stuff
+        orderRequest.getCart().forEach(entry -> order.getCart().add(new OrderCartEntry(partService.getPartById(entry.getPartID()), entry.getAmount())));
+        // add the customer
         order.setCustomer(customerServiceMap.findById(customerId));
 
         return orderServiceMap.save(order);
 
     }
 
-    // TO BE REMOVED
-    @PostMapping ("/updateOrder/cart/{orderId}")
-    public @ResponseBody Order updateOrderCart(@RequestBody Set<OrderCartEntry> cartUpdate, @PathVariable(value = "orderId") Long orderId){
-
-        return null;
-    }
-
     @PostMapping ("/updateStatus/{orderId}/{orderStatus}")
     public @ResponseBody String updateOrderStatus(@PathVariable(value = "orderId") Long orderId, @PathVariable(value = "orderStatus") String orderStatus){
 
-        Order temp = new Order();
-        temp = orderServiceMap.findById(orderId);
-        if (temp == null){
-            return "Could not find order with given id";
-        }
+        Order temp = orderServiceMap.findById(orderId);
+        if (temp == null) return "Could not find order with given id";
         temp.setOrderStatus(orderStatus);
         orderServiceMap.save(temp);
 

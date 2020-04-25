@@ -20,4 +20,6 @@ public class PartServiceImpl implements PartService{
 
 
     public List<Part> getAllParts() {return this.partRepository.getAllParts();}
+
+    public Part getPartById(int partId) {return this.partRepository.getPartById(partId);}
 }

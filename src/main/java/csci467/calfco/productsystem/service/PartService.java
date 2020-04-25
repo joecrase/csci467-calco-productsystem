@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface PartService {
     List<Part> getAllParts();
+
+    Part getPartById(int partId);
 }

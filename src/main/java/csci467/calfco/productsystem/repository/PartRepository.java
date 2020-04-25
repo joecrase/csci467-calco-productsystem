@@ -9,4 +9,6 @@ import java.util.List;
 public interface PartRepository  {
 
     List<Part> getAllParts();
+
+    Part getPartById(int partId);
 }
