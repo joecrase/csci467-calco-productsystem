@@ -234,7 +234,7 @@ public class BootStrapData implements CommandLineRunner {
         Set<OrderCartEntry> totalCart = new HashSet<>();
 
         Random random = new Random();
-        int numberInCart = random.nextInt(10);
+        int numberInCart = random.nextInt(10) + 1;
 
         for(int i = 0; i <= numberInCart ; i++){
             try{

@@ -48,17 +48,22 @@ public class ShippingCostServiceMap extends AbstractMapService<ShippingCost, Lon
 
     public float getCostByWeight(float weight){
 
-        AtomicReference<Float> shippingCost = new AtomicReference<>((float) 0);
+        float shippingCost = 0f;
 
         TreeSet<ShippingCost> orderedShippingCost = new TreeSet<ShippingCost> (map.values()); // orders by max weight
 
-        orderedShippingCost.forEach((value) -> {
-            if (value.getMaxWeight() > weight){
+        for (ShippingCost cost : orderedShippingCost) {
+            if (cost.getMaxWeight() < weight){
             } else {
-                shippingCost.set(value.getPrice());
+                shippingCost = cost.getPrice();
+                break;
             }
-        });
+        }
 
-        return shippingCost.get();
+        return shippingCost;
+    }
+
+    public void deleteTable(){
+        map.clear();
     }
 }
