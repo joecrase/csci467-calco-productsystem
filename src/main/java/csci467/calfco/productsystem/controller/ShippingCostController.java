@@ -40,30 +40,6 @@ public class ShippingCostController {
             ShippingCost temp = shippingCostServiceMap.save(entry);
             System.out.println(temp.toString());
         });
-/*
-        toModify.forEach(shippingCost -> {
-            if (shippingCost.getId() != null && shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()).getId() == shippingCost.getId()){
-                // id was provided, and it is an object in the database with the same id
-                ShippingCost newShippingCost = shippingCostServiceMap.findById(shippingCost.getId());
-                newShippingCost.setPrice(shippingCost.getPrice());
-                newShippingCost.setMaxWeight(shippingCost.getMaxWeight());
-                shippingCostServiceMap.save(newShippingCost);
-            } else if (shippingCostServiceMap.findById(shippingCost.getId()) != null) { // if an id was provided, and is in the database
-                ShippingCost newShippingCost = shippingCostServiceMap.findById(shippingCost.getId());
-                shippingCostServiceMap.delete(shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()));
-                newShippingCost.setPrice(shippingCost.getPrice());
-                newShippingCost.setMaxWeight(shippingCost.getMaxWeight());
-                shippingCostServiceMap.save(newShippingCost);
-            } else { // id is null, create new entry in database
-                ShippingCost newShippingCost = new ShippingCost();
-                shippingCostServiceMap.delete(shippingCostServiceMap.findByWeight(shippingCost.getMaxWeight()));
-                newShippingCost.setPrice(shippingCost.getPrice());
-                newShippingCost.setMaxWeight(shippingCost.getMaxWeight());
-                shippingCostServiceMap.save(newShippingCost);
-            }
-        });
-
-*/
 
         return  new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
     }
@@ -88,10 +64,7 @@ public class ShippingCostController {
             }
         });
 
-
-
         return  new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
-
     }
 
 
