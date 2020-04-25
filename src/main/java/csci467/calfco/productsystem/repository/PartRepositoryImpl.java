@@ -2,6 +2,7 @@ package csci467.calfco.productsystem.repository;
 
 import csci467.calfco.productsystem.models.Part;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -42,14 +43,19 @@ public class PartRepositoryImpl implements PartRepository {
     }
 
     @Override
-    public Part getPartById(int partId) {
+    public Part getPartById(int partId) throws EmptyResultDataAccessException {
 
         final String sql = "SELECT * FROM parts WHERE number = ?";
 
-        return (Part) jdbcTemplate.queryForObject(
-                sql,
-                new Object[]{partId},
-                new BeanPropertyRowMapper<>(Part.class));
-
+        try {
+            Part temp = jdbcTemplate.queryForObject(
+                    sql,
+                    new Object[]{partId},
+                    new BeanPropertyRowMapper<>(Part.class));
+            temp.setId(partId);
+            return temp;
+        } catch (EmptyResultDataAccessException e){
+            return null;
+        }
     }
 }

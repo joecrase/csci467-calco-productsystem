@@ -9,6 +9,8 @@ import csci467.calfco.productsystem.service.map.OrderServiceMap;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.util.Random;
 import java.util.Set;
 
 @Controller
@@ -61,7 +63,6 @@ public class OrderController {
         "weight": 123,
         "priceTotal": 1.0,
         "orderStatus" "abc",
-        "datePurchased": "1/23/4567"
     }
      */
     // Response Body
@@ -110,20 +111,29 @@ public class OrderController {
         orderRequest.getCart().forEach(entry -> order.getCart().add(new OrderCartEntry(partService.getPartById(entry.getPartID()), entry.getAmount())));
         // add the customer
         order.setCustomer(customerServiceMap.findById(customerId));
+        if (orderRequest.getOrderStatus().equals("authorized")){
+            LocalDate date = LocalDate.now();
+            order.setDatePurchased(date.toString());
+        }
 
         return orderServiceMap.save(order);
 
     }
 
     @PostMapping ("/updateStatus/{orderId}/{orderStatus}")
-    public @ResponseBody String updateOrderStatus(@PathVariable(value = "orderId") Long orderId, @PathVariable(value = "orderStatus") String orderStatus){
+    public @ResponseBody Order updateOrderStatus(@PathVariable(value = "orderId") Long orderId, @PathVariable(value = "orderStatus") String orderStatus){
 
         Order temp = orderServiceMap.findById(orderId);
-        if (temp == null) return "Could not find order with given id";
+        if (temp == null) return null;
         temp.setOrderStatus(orderStatus);
+        if (orderStatus.equals("shipped")){
+            Random random = new Random();
+            temp.setTrackingNumber(Integer.toString(random.nextInt(1000000000)));
+        }
         orderServiceMap.save(temp);
 
-        return "Order status for order " + orderId + " set to " + orderStatus;
+
+        return  orderServiceMap.save(temp);
     }
 
 

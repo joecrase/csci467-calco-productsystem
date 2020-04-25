@@ -21,7 +21,7 @@ public class Order extends BaseEntity {
     @JsonProperty("trackingNumber")
     private String trackingNumber;
     @JsonProperty("weight")
-    private int weight;
+    private float weight;
     @JsonProperty("priceTotal")
     private float priceTotal;
     @JsonProperty("orderStatus")
@@ -72,11 +72,11 @@ public class Order extends BaseEntity {
         this.trackingNumber = trackingNumber;
     }
 
-    public int getWeight() {
+    public float getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(float weight) {
         this.weight = weight;
     }
 

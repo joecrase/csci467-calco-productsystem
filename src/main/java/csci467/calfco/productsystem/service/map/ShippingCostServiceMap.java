@@ -4,6 +4,7 @@ import csci467.calfco.productsystem.models.ShippingCost;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicReference;
 
 @Service
@@ -43,5 +44,21 @@ public class ShippingCostServiceMap extends AbstractMapService<ShippingCost, Lon
         });
 
         return found.get();
+    }
+
+    public float getCostByWeight(float weight){
+
+        AtomicReference<Float> shippingCost = new AtomicReference<>((float) 0);
+
+        TreeSet<ShippingCost> orderedShippingCost = new TreeSet<ShippingCost> (map.values()); // orders by max weight
+
+        orderedShippingCost.forEach((value) -> {
+            if (value.getMaxWeight() > weight){
+            } else {
+                shippingCost.set(value.getPrice());
+            }
+        });
+
+        return shippingCost.get();
     }
 }
