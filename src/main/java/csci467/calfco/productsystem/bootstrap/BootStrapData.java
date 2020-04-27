@@ -56,10 +56,10 @@ public class BootStrapData implements CommandLineRunner {
         });
 
         // Create the customers
-        Customer JCrase = createCustomer("Joseph", "Crase", "312 South Fifth Street", "joecrase@gmail.com", "somepassword");
-        Customer MFreund = createCustomer("Molly", "Freund", "Middle of Nowhere", "smurfLord6969@gmail.com", "anotherpassword");
-        Customer AAdams = createCustomer("Adelaide", "Adams", "Somewhere Warm", "acoolemail@gmail.com", "goodpassword");
-        Customer RLlama = createCustomer("Ryan", "Llamas", "A bit North", "sexylamas6969@gmail.com", "legitpassword");
+        Customer JCrase = createCustomer("Joseph", "Crase", "312 South Fifth Street", "joecrase@gmail.com", "somepassword", "Kirkland", "Illinois", "60146","United States");
+        Customer MFreund = createCustomer("Molly", "Freund", "Middle of Nowhere", "smurfLord6969@gmail.com", "anotherpassword","Rockford", "Illinois", "61104","United States");
+        Customer AAdams = createCustomer("Adelaide", "Adams", "Somewhere Warm", "acoolemail@gmail.com", "goodpassword", "Dekalb", "Illinois", "60115","United States");
+        Customer RLlama = createCustomer("Ryan", "Llamas", "A bit North", "sexylamas6969@gmail.com", "legitpassword", "Dekalb", "Illinois", "60115","United States");
 
         /* Setting Shipping Costs */
         for(int i = 0; i <= 100; i = i + 5){
@@ -109,13 +109,18 @@ public class BootStrapData implements CommandLineRunner {
     }
 
     private Customer createCustomer(String firstName, String lastName, String address,
-                                    String email, String password) {
+                                    String email, String password, String city, String state, String zipCode, String country) {
+
         Customer temp = new Customer();
         temp.setFirstName(firstName);
         temp.setLastName(lastName);
         temp.setAddress(address);
         temp.setEmail(email);
         temp.setPassword(password);
+        temp.setCity(city);
+        temp.setState(city);
+        temp.setZipCode(zipCode);
+        temp.setCountry(country);
 
         return customerServiceMap.save(temp);
     }

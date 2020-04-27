@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b0214-3698-4dae-a484-ab0e949f09ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/CreditCardAuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/CreditCardAuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/ShippingCostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/ShippingCostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/CreditCardAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/CreditCardAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/bootstrap/BootStrapData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/bootstrap/BootStrapData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/models/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +168,7 @@
       <workItem from="1586965671603" duration="647000" />
       <workItem from="1586967336250" duration="8697000" />
       <workItem from="1587082497321" duration="76604000" />
-      <workItem from="1587776969696" duration="24851000" />
+      <workItem from="1587776969696" duration="25501000" />
     </task>
     <task id="LOCAL-00001" summary="Set up barbones connection to product legacy database. Closes #1">
       <created>1586285217638</created>
@@ -438,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587950262366</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Modified creditcard/auth controller. No longer need to send transaction number and vendor id.">
+      <created>1587952564775</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1587952564776</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Removed todos">
+      <created>1587952602341</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1587952602341</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,8 +498,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Implemented increasing and decreasing inventory amounts" />
-    <MESSAGE value="Added CrossOrigin to controllers to allow localhost to talk to localhost" />
     <MESSAGE value="Implemented creating/adding customers and creating/adding orders" />
     <MESSAGE value="Implemented getting inventory of a part by part id" />
     <MESSAGE value="Refactored Order to have string value instead of booleans for order status" />
@@ -518,7 +521,9 @@
     <MESSAGE value="Modified shipping cost controllers" />
     <MESSAGE value="Removed commented out blocks of code" />
     <MESSAGE value="Refactored getcost/weight in shipping cost" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored getcost/weight in shipping cost" />
+    <MESSAGE value="Modified creditcard/auth controller. No longer need to send transaction number and vendor id." />
+    <MESSAGE value="Removed todos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed todos" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -538,10 +543,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587150241806" />
-    <state x="764" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1587773152243">
+    <state x="764" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1587952832018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="764" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587773152243" />
+    <state x="764" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587952832018" />
     <state x="719" y="343" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1587787019799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -558,10 +563,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587780805687" />
-    <state x="874" y="130" key="CommitChangelistDialog2" timestamp="1587952563507">
+    <state x="874" y="130" key="CommitChangelistDialog2" timestamp="1587952601667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="874" y="130" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587952563507" />
+    <state x="874" y="130" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587952601667" />
     <state x="190" y="96" key="DiffContextDialog" timestamp="1587161328710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -626,10 +631,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="467" y="167" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587847297541" />
-    <state x="551" y="261" key="Vcs.Push.Dialog.v2" timestamp="1587952568211">
+    <state x="551" y="261" key="Vcs.Push.Dialog.v2" timestamp="1587952603733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587952568211" />
+    <state x="551" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587952603733" />
     <state x="103" y="124" width="1712" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586361526220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
