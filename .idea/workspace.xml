@@ -2,95 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b0214-3698-4dae-a484-ab0e949f09ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Owner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/ProductsystemApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/bootstrap/BootStrapData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/config/JpaConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/config/JpaConfigAlt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/config/JpaConfigAnotherOne.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/CreditCardAuthController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/CustomerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/EmailController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/InventoryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/PartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/ShippingCostController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/BaseEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/CreditCardAuthError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/CreditCardAuthRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/CreditCardAuthRequestId.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/CreditCardAuthResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/EmailRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/Inventory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/InventoryChangeRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/OrderCartEntry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/OrderCartEntryRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/OrderRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/Part.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/models/ShippingCost.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/repository/CreditCardAuthRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/repository/CreditCardAuthRepositoryImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/repository/PartRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/repository/PartRepositoryImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/repository/PartRepositoryImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/CreditCardAuthService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/CreditCardAuthServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/CrudService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/CustomerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/EmailService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/EmailServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/InventoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/PartService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/PartServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/ShippingCostService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/map/AbstractMapService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/map/CustomerServiceMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/map/InventoryServiceMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/map/OrderServiceMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/service/map/ShippingCostServiceMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/csci467/calfco/productsystem/ProductsystemApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/productsystem-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/csci467.calfco.productsystem.ProductsystemApplicationTests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/csci467.calfco.productsystem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/datasource.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-csci467.calfco.productsystem.ProductsystemApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/bootstrap/BootStrapData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/bootstrap/BootStrapData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/CreditCardAuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/CreditCardAuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/ShippingCostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/csci467/calfco/productsystem/controller/ShippingCostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/CreditCardAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/CreditCardAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/ShippingCostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/controller/ShippingCostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/service/map/ShippingCostServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csci467/calfco/productsystem/service/map/ShippingCostServiceMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +178,7 @@
       <workItem from="1586965671603" duration="647000" />
       <workItem from="1586967336250" duration="8697000" />
       <workItem from="1587082497321" duration="76604000" />
-      <workItem from="1587776969696" duration="21354000" />
+      <workItem from="1587776969696" duration="23037000" />
     </task>
     <task id="LOCAL-00001" summary="Set up barbones connection to product legacy database. Closes #1">
       <created>1586285217638</created>
@@ -494,7 +418,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587847557971</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Modified shipping cost controllers">
+      <created>1587858158453</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1587858158453</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Removed commented out blocks of code">
+      <created>1587858246293</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1587858246293</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,8 +487,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Created the boilerplate for the Quantity On Hand feature" />
-    <MESSAGE value="Implemented persistant map of QuantityOnHand." />
     <MESSAGE value="Added OneToOne relationship to QuantityOnHand and Part. Refactored QuantityOnHand model" />
     <MESSAGE value="Implemented increasing and decreasing inventory amounts" />
     <MESSAGE value="Added CrossOrigin to controllers to allow localhost to talk to localhost" />
@@ -574,7 +510,9 @@
     <MESSAGE value="Refactored create order handler and get all orders handler" />
     <MESSAGE value="Created random order generator." />
     <MESSAGE value="Added another profile for credentials, called anotherone" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added another profile for credentials, called anotherone" />
+    <MESSAGE value="Modified shipping cost controllers" />
+    <MESSAGE value="Removed commented out blocks of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed commented out blocks of code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -614,46 +552,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587780805687" />
-    <state x="874" y="130" key="CommitChangelistDialog2" timestamp="1587858157412">
+    <state x="874" y="130" key="CommitChangelistDialog2" timestamp="1587858245593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="874" y="130" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587858157412" />
+    <state x="874" y="130" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587858245593" />
     <state x="190" y="96" key="DiffContextDialog" timestamp="1587161328710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="190" y="96" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587161328710" />
-    <state width="1851" height="299" key="GridCell.Tab.0.bottom" timestamp="1587857495154">
+    <state width="1851" height="299" key="GridCell.Tab.0.bottom" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495154" />
-    <state width="1851" height="299" key="GridCell.Tab.0.center" timestamp="1587857495153">
+    <state width="1851" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
+    <state width="1851" height="299" key="GridCell.Tab.0.center" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495153" />
-    <state width="1851" height="299" key="GridCell.Tab.0.left" timestamp="1587857495153">
+    <state width="1851" height="299" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
+    <state width="1851" height="299" key="GridCell.Tab.0.left" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495153" />
-    <state width="1851" height="299" key="GridCell.Tab.0.right" timestamp="1587857495153">
+    <state width="1851" height="299" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
+    <state width="1851" height="299" key="GridCell.Tab.0.right" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495153" />
-    <state width="1851" height="299" key="GridCell.Tab.1.bottom" timestamp="1587857495155">
+    <state width="1851" height="299" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
+    <state width="1851" height="299" key="GridCell.Tab.1.bottom" timestamp="1587949690763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495155" />
-    <state width="1851" height="299" key="GridCell.Tab.1.center" timestamp="1587857495154">
+    <state width="1851" height="299" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690763" />
+    <state width="1851" height="299" key="GridCell.Tab.1.center" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495154" />
-    <state width="1851" height="299" key="GridCell.Tab.1.left" timestamp="1587857495154">
+    <state width="1851" height="299" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
+    <state width="1851" height="299" key="GridCell.Tab.1.left" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495154" />
-    <state width="1851" height="299" key="GridCell.Tab.1.right" timestamp="1587857495154">
+    <state width="1851" height="299" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
+    <state width="1851" height="299" key="GridCell.Tab.1.right" timestamp="1587949690762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1851" height="299" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587857495154" />
+    <state width="1851" height="299" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587949690762" />
     <state width="1851" height="328" key="GridCell.Tab.2.bottom" timestamp="1587849464766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -682,10 +620,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="467" y="167" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587847297541" />
-    <state x="551" y="261" key="Vcs.Push.Dialog.v2" timestamp="1587858159947">
+    <state x="551" y="261" key="Vcs.Push.Dialog.v2" timestamp="1587858247867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587858159947" />
+    <state x="551" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587858247867" />
     <state x="103" y="124" width="1712" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586361526220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

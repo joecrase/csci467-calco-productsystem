@@ -26,12 +26,13 @@ public class CreditCardAuthController {
     // Request Body
     /*
     {
-	"vendor": "VE001-99",
-	"trans": "907-987654321-296", ** NEEDS TO BE IN THIS FORMAT, AND UNIQUE
+	"vendor": "VE001-99", (done in backend)
+	"trans": "907-987654321-296", ** NEEDS TO BE IN THIS FORMAT, AND UNIQUE (done in backend)
 	"cc": "6011 1234 4321 1234", *** THIS HAS TO BE THIS EXACT CC NUMBER
 	"name": "John Doe",
 	"exp": "12/2020",
 	"amount": 654.32
+	}
      */
     // Response Body
     /*
@@ -52,6 +53,7 @@ public class CreditCardAuthController {
     @PostMapping("/auth")
     public @ResponseBody CreditCardAuthResponse authorizeTransaction(@RequestBody CreditCardAuthRequest request){
 
+        // TODO Create transaction id, use common vendo id
         return creditCardAuthService.sendRequest(request);
     }
 

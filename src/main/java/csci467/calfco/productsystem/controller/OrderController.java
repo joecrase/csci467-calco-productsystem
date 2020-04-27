@@ -100,6 +100,7 @@ public class OrderController {
     @PostMapping ("/{customerId}") // Id of the customer whom placed the order
     public @ResponseBody Order createOrder(@RequestBody OrderRequest orderRequest, @PathVariable(value = "customerId") Long customerId){
 
+
         Order order = new Order();
         order.setAuthorizationNumber(orderRequest.getAuthorizationNumber());
         order.setTrackingNumber("");

@@ -73,18 +73,7 @@ public class ShippingCostController {
     @RequestMapping("/getCost/{weight}")
     public @ResponseBody float getCost(@PathVariable (value = "weight") float toFind){
 
-        TreeSet<ShippingCost> shippingCostTreeSet = new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
-        ShippingCost previous = shippingCostTreeSet.first();
-        float shippingCost = -1;
-
-        for (ShippingCost entry : shippingCostTreeSet) {
-            if (entry.getMaxWeight() > toFind){
-                shippingCost = previous.getPrice();
-            } else {
-                previous = entry;
-            }
-        }
-        return shippingCost;
+        return shippingCostServiceMap.getCostByWeight(toFind);
     }
 
 }
