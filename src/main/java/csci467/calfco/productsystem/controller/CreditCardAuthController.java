@@ -50,9 +50,6 @@ public class CreditCardAuthController {
 
     @PostMapping("/auth")
     public @ResponseBody CreditCardAuthResponse authorizeTransaction(@RequestBody CreditCardAuthRequest request){
-
-        // TODO Create transaction id, use constnt vendo id
-
         /* Create Transaction ID */
         // chose a Character random from this String
         String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
