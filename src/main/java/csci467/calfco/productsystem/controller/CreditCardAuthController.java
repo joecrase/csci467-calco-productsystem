@@ -56,7 +56,7 @@ public class CreditCardAuthController {
                 + "0123456789";
 
         // create StringBuffer size of AlphaNumericString
-        int n = 15;
+        int n = 10;
         StringBuilder sb = new StringBuilder(n);
 
         for (int i = 0; i < n; i++) {
