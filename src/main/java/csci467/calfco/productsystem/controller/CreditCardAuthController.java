@@ -26,8 +26,6 @@ public class CreditCardAuthController {
     // Request Body
     /*
     {
-	"vendor": "VE001-99", (done in backend)
-	"trans": "907-987654321-296", ** NEEDS TO BE IN THIS FORMAT, AND UNIQUE (done in backend)
 	"cc": "6011 1234 4321 1234", *** THIS HAS TO BE THIS EXACT CC NUMBER
 	"name": "John Doe",
 	"exp": "12/2020",
@@ -53,7 +51,32 @@ public class CreditCardAuthController {
     @PostMapping("/auth")
     public @ResponseBody CreditCardAuthResponse authorizeTransaction(@RequestBody CreditCardAuthRequest request){
 
-        // TODO Create transaction id, use common vendo id
+        // TODO Create transaction id, use constnt vendo id
+
+        /* Create Transaction ID */
+        // chose a Character random from this String
+        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                + "0123456789";
+
+        // create StringBuffer size of AlphaNumericString
+        int n = 15;
+        StringBuilder sb = new StringBuilder(n);
+
+        for (int i = 0; i < n; i++) {
+
+            // generate a random number between
+            // 0 to AlphaNumericString variable length
+            int index
+                    = (int)(AlphaNumericString.length()
+                    * Math.random());
+
+            // add Character one by one in end of sb
+            sb.append(AlphaNumericString
+                    .charAt(index));
+        }
+
+        request.setTrans(sb.toString());
+        request.setVendor("VE001-99");
         return creditCardAuthService.sendRequest(request);
     }
 
