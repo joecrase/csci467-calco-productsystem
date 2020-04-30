@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 @Profile("alt")
 @Configuration
 @PropertySource("classpath:datasource.properties")
-public class JpaConfigAlt {
+public class JdbcConfigAlt {
 
     @Bean(name = "legacyProductDB")
     @ConfigurationProperties(prefix = "calfco.productsystem.alt")

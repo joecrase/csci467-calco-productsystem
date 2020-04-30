@@ -11,12 +11,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 
-@Profile("anotherone")
+@Profile("main")
 @Configuration
 @PropertySource("classpath:datasource.properties")
-public class JpaConfigAnotherOne {
+public class JdbcConfig {
+
     @Bean(name = "legacyProductDB")
-    @ConfigurationProperties(prefix = "calfco.productsystem.anotherone")
+    @ConfigurationProperties(prefix = "calfco.productsystem")
     public DataSource getDataSource(){
         return DataSourceBuilder.create().build();
     }

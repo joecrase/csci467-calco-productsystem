@@ -23,7 +23,7 @@ public class ShippingCostController {
     @RequestMapping("/all")
     public @ResponseBody Set<ShippingCost> getAllShippingCost(){
 
-       return new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
+       return new TreeSet<>(shippingCostServiceMap.findAll());
     }
 
     // Modifies the weight bracket to a different weight/price
@@ -37,11 +37,10 @@ public class ShippingCostController {
         shippingCostServiceMap.deleteTable();
         toModify.forEach(entry -> {
             System.out.println(entry.toString());
-            ShippingCost temp = shippingCostServiceMap.save(entry);
-            System.out.println(temp.toString());
+            shippingCostServiceMap.save(entry);
         });
 
-        return  new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
+        return new TreeSet<>(shippingCostServiceMap.findAll());
     }
 
     @PostMapping
@@ -64,7 +63,7 @@ public class ShippingCostController {
             }
         });
 
-        return  new TreeSet<ShippingCost>(shippingCostServiceMap.findAll());
+        return new TreeSet<>(shippingCostServiceMap.findAll());
     }
 
 

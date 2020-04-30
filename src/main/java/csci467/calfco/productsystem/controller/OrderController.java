@@ -54,7 +54,7 @@ public class OrderController {
     {
         "cart": [
             {
-                "partId": 123,
+                "partID": 123,
                 "amount": 123
             },
             ...
@@ -108,6 +108,7 @@ public class OrderController {
         order.setPriceTotal(orderRequest.getPriceTotal());
         order.setOrderStatus(orderRequest.getOrderStatus());
         order.setDatePurchased(orderRequest.getDatePurchased());
+        System.out.println(orderRequest.getCart());
         // add cart stuff
         orderRequest.getCart().forEach(entry -> order.getCart().add(new OrderCartEntry(partService.getPartById(entry.getPartID()), entry.getAmount())));
         // add the customer

@@ -16,7 +16,7 @@ public class EmailController {
         this.emailService = emailService;
     }
 
-    @GetMapping(path = "/send")
+    @PostMapping(path = "/send")
     public @ResponseBody String sendEmail(@RequestBody EmailRequest request){
 
         emailService.sendSimpleMessage(request.getEmail(), request.getSubject(), request.getContent());
