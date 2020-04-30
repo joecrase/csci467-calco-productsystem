@@ -1,24 +1,29 @@
 package csci467.calfco.productsystem.repository;
 
 import csci467.calfco.productsystem.models.Part;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Collection;
 import java.util.List;
 
 @Repository("partRepository")
 public class PartRepositoryImpl implements PartRepository {
 
-    @Autowired
+    @Qualifier("legacyProductDAO")
     private JdbcTemplate jdbcTemplate;
 
+    public PartRepositoryImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
     @Override
-    public Collection<Part> getAllParts() {
+    public List<Part> getAllParts() {
 
         final String sql = "SELECT * FROM parts";
         List<Part> parts = jdbcTemplate.query(sql, new RowMapper<Part>() {
@@ -35,5 +40,22 @@ public class PartRepositoryImpl implements PartRepository {
         });
 
         return parts;
+    }
+
+    @Override
+    public Part getPartById(int partId) throws EmptyResultDataAccessException {
+
+        final String sql = "SELECT * FROM parts WHERE number = ?";
+
+        try {
+            Part temp = jdbcTemplate.queryForObject(
+                    sql,
+                    new Object[]{partId},
+                    new BeanPropertyRowMapper<>(Part.class));
+            temp.setId(partId);
+            return temp;
+        } catch (EmptyResultDataAccessException e){
+            return null;
+        }
     }
 }

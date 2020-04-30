@@ -1,24 +1,31 @@
 package csci467.calfco.productsystem.controller;
 
 import csci467.calfco.productsystem.models.Part;
-import csci467.calfco.productsystem.repository.PartRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import csci467.calfco.productsystem.service.PartServiceImpl;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 @Controller
 @RequestMapping(path = "/parts")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PartController {
 
-    @Autowired
-    PartRepository partRepository;
+
+    PartServiceImpl partService;
+
+    public PartController(PartServiceImpl partService) {
+        this.partService = partService;
+    }
 
     @GetMapping(path = "/all")
-    public @ResponseBody Iterable<Part> getAllParts(){
+    public @ResponseBody List<Part> getAllParts(){
 
-        return partRepository.getAllParts();
+        return partService.getAllParts();
     }
 
 }

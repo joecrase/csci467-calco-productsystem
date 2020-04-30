@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="048b0214-3698-4dae-a484-ab0e949f09ad" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="productsystem" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="productsystem" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="productsystem" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="productsystem" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="productsystem" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-mail:2.2.6.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="productsystem" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-mail:2.2.6.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter:2.2.6.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aDivbbGT3FCHD136D4R4LyfUM3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="csci467.calfco.productsystem.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\git\csci467-calfco-productsystem\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ProductsystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="productsystem.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="csci467.calfco.productsystem.ProductsystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="showMultipleContextsPanel" value="false" />
+    <option name="showProfilesPanel" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="048b0214-3698-4dae-a484-ab0e949f09ad" name="Default Changelist" comment="" />
+      <created>1586276796852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586276796852</updated>
+      <workItem from="1586276802093" duration="43161000" />
+      <workItem from="1586963306381" duration="660000" />
+      <workItem from="1586965671603" duration="647000" />
+      <workItem from="1586967336250" duration="8697000" />
+      <workItem from="1587082497321" duration="76604000" />
+      <workItem from="1587776969696" duration="29787000" />
+      <workItem from="1588179467346" duration="8419000" />
+    </task>
+    <task id="LOCAL-00001" summary="Set up barbones connection to product legacy database. Closes #1">
+      <created>1586285217638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586285217638</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added gradle to gitignore">
+      <created>1586285339760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586285339760</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changed dependancy injection to constructor based.">
+      <created>1586359410338</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586359410338</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactored jdbc and datasource properties">
+      <created>1586362782481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586362782481</updated>
+    </task>
+    <task id="LOCAL-00005" summary="put in yml configuration, not implemented">
+      <created>1586365977963</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586365977963</updated>
+    </task>
+    <task id="LOCAL-00006" summary="renamed function">
+      <created>1586367693406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586367693406</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implemented credit authorization feature, need to add error response.">
+      <created>1586538229595</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586538229595</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented error response to credit authorization.">
+      <created>1586539039910</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586539039910</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactored url for processing system to a properties file">
+      <created>1586540632592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586540632592</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Created the boilerplate for the Quantity On Hand feature">
+      <created>1586909599096</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586909599096</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implemented persistant map of QuantityOnHand.">
+      <created>1587143726278</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587143726278</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added OneToOne relationship to QuantityOnHand and Part. Refactored QuantityOnHand model">
+      <created>1587144037981</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587144037981</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implemented increasing and decreasing inventory amounts">
+      <created>1587149071780</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587149071780</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added CrossOrigin to controllers to allow localhost to talk to localhost">
+      <created>1587149124987</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587149124987</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implemented creating/adding customers and creating/adding orders">
+      <created>1587159836984</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587159836984</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implemented getting inventory of a part by part id">
+      <created>1587161358043</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1587161358043</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Refactored Order to have string value instead of booleans for order status">
+      <created>1587167211444</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1587167211444</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added date purchased field to Order">
+      <created>1587167340177</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1587167340177</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Order route to update order status">
+      <created>1587167953936</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1587167953936</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added route to get order information by order id">
+      <created>1587169070399</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1587169070399</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed order and customer map service. Fixed create order controller.">
+      <created>1587415329812</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1587415329812</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added ShippingCost model, service, and controller. Implemented get all and modify shipping costs">
+      <created>1587432214179</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1587432214179</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Implemented creating a new entry when modifying shipping costs if no id was provided">
+      <created>1587434058854</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1587434058854</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Implemented getting the shipping cost from the weight">
+      <created>1587434791049</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1587434791049</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Removed outputs from BootStrapData">
+      <created>1587495639152</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1587495639152</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added response to /increment and /decrement response handlers">
+      <created>1587499983951</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1587499983951</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Implemented sorting the response of the inventory controller to sort by part id">
+      <created>1587500442044</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1587500442044</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Implemented profiles to switch credentials (main, alt) see application.properties">
+      <created>1587501061538</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1587501061538</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Implemented email sender and controller.">
+      <created>1587503390254</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1587503390254</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added sorted response when changing inventory amounts">
+      <created>1587503543257</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1587503543257</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added documentation for the credit card authorization controller">
+      <created>1587751429321</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1587751429321</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Refactored create order handler and get all orders handler">
+      <created>1587773466558</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1587773466558</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Created random order generator.">
+      <created>1587796805831</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1587796805831</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added another profile for credentials, called anotherone">
+      <created>1587847557971</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1587847557971</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Modified shipping cost controllers">
+      <created>1587858158453</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1587858158453</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Removed commented out blocks of code">
+      <created>1587858246293</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1587858246293</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Refactored getcost/weight in shipping cost">
+      <created>1587950262366</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1587950262366</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Modified creditcard/auth controller. No longer need to send transaction number and vendor id.">
+      <created>1587952564775</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1587952564776</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Removed todos">
+      <created>1587952602341</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1587952602341</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Made changes to the customer object">
+      <created>1587953071965</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1587953071965</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Chagned length of transaction id">
+      <created>1587953155918</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1587953155918</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Refactored Order to have string value instead of booleans for order status" />
+    <MESSAGE value="Added date purchased field to Order" />
+    <MESSAGE value="Order route to update order status" />
+    <MESSAGE value="Added route to get order information by order id" />
+    <MESSAGE value="Fixed order and customer map service. Fixed create order controller." />
+    <MESSAGE value="Added ShippingCost model, service, and controller. Implemented get all and modify shipping costs" />
+    <MESSAGE value="Implemented creating a new entry when modifying shipping costs if no id was provided" />
+    <MESSAGE value="Implemented getting the shipping cost from the weight" />
+    <MESSAGE value="Removed outputs from BootStrapData" />
+    <MESSAGE value="Added response to /increment and /decrement response handlers" />
+    <MESSAGE value="Implemented sorting the response of the inventory controller to sort by part id" />
+    <MESSAGE value="Implemented profiles to switch credentials (main, alt) see application.properties" />
+    <MESSAGE value="Implemented email sender and controller." />
+    <MESSAGE value="Added sorted response when changing inventory amounts" />
+    <MESSAGE value="Added documentation for the credit card authorization controller" />
+    <MESSAGE value="Refactored create order handler and get all orders handler" />
+    <MESSAGE value="Created random order generator." />
+    <MESSAGE value="Added another profile for credentials, called anotherone" />
+    <MESSAGE value="Modified shipping cost controllers" />
+    <MESSAGE value="Removed commented out blocks of code" />
+    <MESSAGE value="Refactored getcost/weight in shipping cost" />
+    <MESSAGE value="Modified creditcard/auth controller. No longer need to send transaction number and vendor id." />
+    <MESSAGE value="Removed todos" />
+    <MESSAGE value="Made changes to the customer object" />
+    <MESSAGE value="Chagned length of transaction id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chagned length of transaction id" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="194" key="#Assign_Data_Sources" timestamp="1587152241255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="194" key="#Assign_Data_Sources/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587152241255" />
+    <state x="563" y="186" key="#Notifications" timestamp="1586276810104">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="563" y="186" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586276810104" />
+    <state x="555" y="194" key="#SQL_Dialects" timestamp="1587150205741">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="194" key="#SQL_Dialects/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587150205741" />
+    <state x="555" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587150241806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587150241806" />
+    <state x="764" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1587952832018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587952832018" />
+    <state x="719" y="343" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1587787019799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="343" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587787019799" />
+    <state x="703" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587495611650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587495611650" />
+    <state x="693" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587151261541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587151261541" />
+    <state x="689" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1587780805687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587780805687" />
+    <state x="874" y="130" key="CommitChangelistDialog2" timestamp="1588231452302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="874" y="130" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588231452302" />
+    <state x="190" y="96" width="1536" height="858" key="DiffContextDialog" timestamp="1588231596543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="190" y="96" width="1536" height="858" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588231596543" />
+    <state width="1851" height="385" key="GridCell.Tab.0.bottom" timestamp="1588198997942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997942" />
+    <state width="1851" height="385" key="GridCell.Tab.0.center" timestamp="1588198997942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997942" />
+    <state width="1851" height="385" key="GridCell.Tab.0.left" timestamp="1588198997942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997942" />
+    <state width="1851" height="385" key="GridCell.Tab.0.right" timestamp="1588198997942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997942" />
+    <state width="1851" height="385" key="GridCell.Tab.1.bottom" timestamp="1588198997943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997943" />
+    <state width="1851" height="385" key="GridCell.Tab.1.center" timestamp="1588198997943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997943" />
+    <state width="1851" height="385" key="GridCell.Tab.1.left" timestamp="1588198997943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997943" />
+    <state width="1851" height="385" key="GridCell.Tab.1.right" timestamp="1588198997943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="385" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588198997943" />
+    <state width="1851" height="328" key="GridCell.Tab.2.bottom" timestamp="1587849464766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="328" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587849464766" />
+    <state width="1851" height="328" key="GridCell.Tab.2.center" timestamp="1587849464766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="328" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587849464766" />
+    <state width="1851" height="328" key="GridCell.Tab.2.left" timestamp="1587849464766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="328" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587849464766" />
+    <state width="1851" height="328" key="GridCell.Tab.2.right" timestamp="1587849464766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="328" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587849464766" />
+    <state x="762" y="446" key="ReplaceDuplicatesPrompt" timestamp="1587787132589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="762" y="446" key="ReplaceDuplicatesPrompt/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587787132589" />
+    <state x="649" y="236" key="RollbackChangesDialog" timestamp="1586365512421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="649" y="236" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586365512421" />
+    <state x="467" y="167" key="SettingsEditor" timestamp="1587847297541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="467" y="167" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587847297541" />
+    <state x="676" y="220" key="VCS.ChangeListViewerDialog" timestamp="1588231591294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="220" key="VCS.ChangeListViewerDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588231591294" />
+    <state x="551" y="261" key="Vcs.Push.Dialog.v2" timestamp="1587953157635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="551" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587953157635" />
+    <state x="103" y="124" width="1712" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586361526220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="103" y="124" width="1712" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586361526220" />
+    <state x="693" y="291" width="540" height="496" key="extract.method.dialog" timestamp="1587793443286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="291" width="540" height="496" key="extract.method.dialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587793443286" />
+    <state x="699" y="363" key="git4idea.ui.GitUnstashDialog" timestamp="1588231592790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="363" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588231592790" />
+    <state x="626" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1587154445719">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="626" y="254" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587154445719" />
+  </component>
+</project>
